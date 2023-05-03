@@ -6,6 +6,20 @@ body {
   font-size: 1rem;
 }
 
+.titulo {
+  margin: 2rem auto;
+  background: #2b2a2a;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  text-align: center;
+  padding: 20px;
+}
+
+.titulo h1 {
+  text-shadow: 2px 2px 4px #191818;
+}
+
 .conteudo {
   margin: 0 auto;
   width: 100%;
@@ -175,4 +189,58 @@ form {
 
 .frm-linha button:hover {
   background: #3c3a3a;
+}
+
+@media only screen and (max-width: 600px) {
+  .titulo {
+    margin: 1rem auto;
+    width: 70%;
+    max-width: 400px;
+  }
+
+  .conteudo {
+    width: 70%;
+    max-width: 450px;
+    margin-top: 35px;
+    margin-bottom: 40px;
+  }
+
+  .topo input {
+    width: 18rem;
+  }
+
+  #listaTarefas span {
+    width: 12rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .topo input {
+    width: 15rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .topo input {
+    width: 10rem;
+  }
+
+  .conteudo {
+    width: 60%;
+    max-width: 450px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
+
+  #listaTarefas li {
+    padding: 12px;
+  }
+
+  #listaTarefas span {
+    width: 8rem;
+  }
+
+  #janelaEdicao {
+    width: 320px;
+  }
 }
